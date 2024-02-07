@@ -1,4 +1,4 @@
-import Transaction from "./Transaction"
+import Transaction from "../Transaction/Transaction"
 import './TransactionHistory.css'
 
 export default function TransactionHistory({ items }) {

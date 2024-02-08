@@ -4,6 +4,7 @@
   margin-top: 20px;
   width: 100%;
   text-transform: capitalize;
+  text-align: center;
 }
 
 table,
@@ -26,4 +27,5 @@ th {
 .transactionTitle {
   margin-top: 40px;
   font-size: 32px;
+  text-align: center;
 }

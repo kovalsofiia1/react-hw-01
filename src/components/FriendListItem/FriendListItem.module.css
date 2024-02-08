@@ -10,14 +10,6 @@
   background-color: rgba(245, 245, 245, 0.539);
 }
 
-.onlineCard {
-  color: green;
-}
-
-.offlineCard {
-  color: red;
-}
-
 .friendCardText {
   font-weight: 500;
   padding-top: 8px;
@@ -26,4 +18,14 @@
 
 .onlineStatusText {
   font-size: 14px;
+}
+
+.onlineCard {
+  composes: onlineStatusText;
+  color: green;
+}
+
+.offlineCard {
+  composes: onlineStatusText;
+  color: red;
 }

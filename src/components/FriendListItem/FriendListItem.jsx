@@ -1,12 +1,12 @@
-import './FriendListItem.css'
+import css from './FriendListItem.module.css'
 
 export default function FriendListItem({ avatar, name, isOnline }) {
     const cardClass = isOnline ? "onlineCard" : "offlineCard";
     return (
-        <div className="friendListItem">
+        <div className={css.friendListItem}>
             <img src={ avatar } alt="Avatar" width="48" />
-            <p className='friendCardText'>{ name }</p>
-            <p className={"onlineStatusText "+ cardClass }>{ isOnline ? 'Online':'Offline' }</p>
+            <p className={css.friendCardText}>{ name }</p>
+            <p className={ css[cardClass] }>{ isOnline ? 'Online':'Offline' }</p>
         </div>
     )
 }
